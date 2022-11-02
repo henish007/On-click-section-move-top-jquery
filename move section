@@ -1,0 +1,14 @@
+  $("#read_more").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".product-single__description").offset().top-140
+    });
+  });  
+  
+  // media js extra.
+  if ($(document).width() <= 991 && $(document).width() >= 768) {  
+    $("#read_more").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".product-single__description").offset().top-300
+      });
+    }); 
+  }
